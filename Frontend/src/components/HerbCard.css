@@ -1,0 +1,27 @@
+.heading {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.card-container {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 13%, 0.1);
+    padding: 20px;
+    margin: 30px;
+}
+
+.herb-name {
+    font-family: sans-serif;
+}
+
+.herb-description {
+    font-family: sans-serif;
+}
+
+.card-container img {
+    border-radius: 70%;
+}
