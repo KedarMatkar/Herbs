@@ -5,14 +5,16 @@
 import React from "react";
 import HeroSection from "./components/HeroSection";
 import HerbCard from "./components/HerbCard";
+import Weather from "./components/Weather";
 
 function App() {
   return (
     <>
       <HeroSection/>
       <HerbCard/>
+      <Weather />
     </>
   );
 }
 
-export default App
+export default App;
