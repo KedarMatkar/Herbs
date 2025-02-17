@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Header.css"
-const Hearder = () => {
+const Header = () => {
   return (
     <div className='header-section'>
         <div className='logo'>
@@ -8,14 +8,14 @@ const Hearder = () => {
         </div>
         <div className="header-content">
             <ul className='list'>
-                <li><a href="Home">Home</a></li>
-                <li><a href="Plant based on Location">Plant based on Location</a></li>
-                <li><a href="Identify Plant">Identify Plant</a></li>
-                <li><a href="About Us">About Us</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/location-plant">Plant based on Location</a></li>
+                <li><a href="/identify-Plant">Identify Plant</a></li>
+                <li><a href="/about-us">About Us</a></li>
             </ul>
         </div>
     </div>
   )
 }
 
-export default Hearder;
+export default Header;
