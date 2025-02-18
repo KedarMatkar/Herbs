@@ -1,22 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 .header-section {
-    height: 100px;
+    height: 70px;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     padding: 20px;
     margin-bottom: 10px;
-    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    /* background-color:  rgba(227, 227, 223, 1); */
+    background-color: rgba(0, 80, 69, 100%);
+    z-index: 999;
 }
 
-.logo {
-    width: 400px;
-    height: 70px;
-    background-color: rgba(50, 53, 54, 0.31);
+.header-section img{
+    margin-top: 1px;
 }
 
 .header-content {
-    width: 600px;
+    width: 700px;
+    margin-top: 29px;
 }
 
 .list {
@@ -29,11 +34,29 @@
 }
 
 .list li a {
-    text-decoration: none;
-    color: black;
+    font-family: "Open Sans";
+    font-weight: 600;
     font-size: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255, 100%);
+    margin-top: 10px;
 }
 
 .list li a:hover {
-    color: rgb(2, 75, 17);
+    color: black;
+}
+
+.list li a::after {
+    content: "";
+    height: 3px;
+    background-color: black;
+    display: block;
+    border-radius: 4px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.list li a:hover::after {
+    transform: scaleX(1);
 }

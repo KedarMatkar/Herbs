@@ -3,8 +3,6 @@ import "./HeroSection.css";
 const HeroSection = () => {
     return (
         <div className="hero-container">
-            <div className="hero-overlay"></div>
-
             <div className="hero-content">
                 <h1>Welcome to Virtual Herbal Garden</h1>
                 <p>Tap into nature’s remedies with local herbs and plants.</p>
@@ -15,6 +13,9 @@ const HeroSection = () => {
                 </div>
 
                 <button className="location-btn">📍Find herbs near me</button>
+            </div>
+            <div className="plant-section">
+                
             </div>
         </div>
     );
