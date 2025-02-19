@@ -15,7 +15,8 @@ const HeroSection = () => {
                 <button className="location-btn">📍Find herbs near me</button>
             </div>
             <div className="plant-section">
-                
+                <img className="circle-gradient" src="/circle__gradient.webp" alt="circle-gradient" />
+                <img className="herbs" src="/Herbs.png" alt="Herbs" />
             </div>
         </div>
     );
