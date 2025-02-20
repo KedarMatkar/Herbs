@@ -1,0 +1,24 @@
+.classify-container {
+    height: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: row; /* Stack content vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center text */
+}
+
+
+
+.upload-container {
+    width: 50%;
+    height: auto; /* Allow content to define height */
+    padding: 20px;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%; /* Adjust image size */
+    height: 100%;
+    object-fit: contain;
+}

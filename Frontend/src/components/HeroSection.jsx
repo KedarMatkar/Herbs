@@ -11,8 +11,12 @@ const HeroSection = () => {
                     <input type="text"  placeholder="Search for an herb"/>
                     <button type="submit">Search</button>
                 </div>
-
-                <button className="location-btn">📍Find herbs near me</button>
+                <p>Find herb's based on location</p>
+                <div className="hero-search">
+                    <input type="text"  placeholder="📍Location"/>
+                    <button type="submit">Search</button>
+                </div>
+                {/* <button className="location-btn">📍Find herbs near me</button> */}
             </div>
             <div className="plant-section">
                 <img className="circle-gradient" src="/circle__gradient.webp" alt="circle-gradient" />
