@@ -9,12 +9,14 @@ const ImageClassification = () => {
 
     const handleImageUpload = (event) => {
         const file = event.target.files[0];
-        if(file) {
-            const ImageUrl = URL.createObjectURL(file);
-            setImage(ImageUrl);
-            console.log(ImageUrl);
+        if(!file) {
+          console.warn("No file selected");
+          return;
         }
-    };
+        const imageUrl = URL.createObjectURL(file);
+        setImage(imageUrl);
+        console.log(imageUrl);
+      };
 
   return (
     <div className='classify-container'>
@@ -25,7 +27,7 @@ const ImageClassification = () => {
       </div>
       <div className='image-container'>
         {setImage ? (
-            <img src={setImage} alt="image" />
+            <img src={Image} alt="image" />
         ) : (
             <p>No Image Uploaded</p>
         )}

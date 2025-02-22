@@ -14,11 +14,40 @@
     width: 50%;
     height: auto; /* Allow content to define height */
     padding: 20px;
-    text-align: center;
+    text-align: left;
+}
+
+.upload-container h1{
+    font-family: "Open Sans";
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.upload-container p {
+    font-family: "Open Sans";
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.upload-container input {
+    font-family: "Open Sans";
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.image-container {
+    max-width: 500px;
+    max-height: 500px;
+    border: 2px dashed #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 .image-container img {
     max-width: 100%; /* Adjust image size */
     height: 100%;
-    object-fit: contain;
 }
