@@ -10,7 +10,8 @@ const Header = () => {
                 <li><Link to='/'>Home</Link></li>
                 {/* <li><a href="/location-plant">Location</a></li> */}
                 <li><Link to="/identify-plant">Classify</Link></li>
-                <li><a href="/about-us">About Us</a></li>
+                <li><Link to="/add-herb">Add Herb</Link></li>
+                <li><Link to="/about-us">About Us</Link></li>
             </ul>
         </div>
     </div>
