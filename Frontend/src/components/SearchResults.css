@@ -1,0 +1,17 @@
+.result {
+    position: relative;
+}
+
+.search-heading {
+    font-family: "Open Sans";
+    text-align: center;
+    font-size: 4rem;
+    position: inherit;
+    top: 100px;
+}
+
+.herb-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px
+}

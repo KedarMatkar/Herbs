@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import axios from "axios";
-import HerbCard from "../components/HerbCard";
 import SearchResultCard from "./SearchResultCard";
+import "./SearchResults.css"
 
 const SearchResults = () => {
     const location = useLocation();
@@ -43,8 +43,8 @@ const SearchResults = () => {
     }, [herbQuery, locationQuery]);
 
     return (
-        <div>
-            <h2>Search Results</h2>
+        <div className="result">
+            <h2 className="search-heading">Search Results</h2>
             {error ? (
                 <p style={{ color: "red" }}>{error}</p>
             ) : (
